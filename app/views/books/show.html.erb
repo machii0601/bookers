@@ -1,2 +1,5 @@
-<h4>Book was succesfully update</h4>
-<p>Find me in app/views/books/show.html.erb</p>
+<h4>Book was succesfully update.</h4>
+<p><%= @book.title %></p>
+<p><%= @book.body %></p>
+<%= link_to 'Edit', books_path %>
+<%= link_to 'Back', books_path %>
