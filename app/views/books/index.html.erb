@@ -1,17 +1,22 @@
 <h3>New book</h3>
 
+<%= link_to 'Show', book_books_path %>
+<%= link_to 'Edit', edit_books_path %>
+<%= link_to 'Destroy', destroy_books_path %>
+
 <%= form_with model: @book, local: true do |form| %>
 
-<p><%= form.label :title, 'Title' %><br>
-<%= form.text_field :title %>
-</p>
+  <p><%= form.label :title, 'Title' %><br>
+  <%= form.text_field :title %>
+  </p>
 
-<p><%= form.label :body, 'Body' %><br>
-<%= form.text_area :body %>
-</p>
+  <p><%= form.label :body, 'Body' %><br>
+  <%= form.text_area :body %>
+  </p>
 
-<p><%= form.submit 'Create book' %>
-</p>
+  <p><%= form.submit 'Create book' %>
+  </p>
+
 
 <% end %>
 
