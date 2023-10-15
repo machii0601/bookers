@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   root to: 'homes#top'
   post 'books' => 'books#create'
   patch 'books/:id' => 'books#update', as: 'update_book'
+  delete 'books/:id' => 'book#destroy', as: 'destroyj_book'
 end
